@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>GMUtils - Encript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://img.icons8.com/cotton/64/000000/binary-file.png" type="png/image" rel="shortcut icon">
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body onload="brython()">
+    <header class="header">
+        <hgroup>
+            <h1>EnCrypt</h1>
+        </hgroup>
+    </header>
+
+    <main class="container">
+        <div>
+            <form id="crypt-decimal-form" name="crypt-decimal-form">
+                <fieldset>
+                    <div>
+                        <label id="label-input-crypt" name="label-input-crypt" for="input-crypt">Criptografar</label>
+                        <input type="text" id="input-crypt" name="input-crypt" title="Informe o valor em binário" aria-labelledby="label-input-crypt" />
+                    </div>
+    
+                    <div>
+                        <label id="label-chars-select" name="label-chars-select" for="chars-select">Deve começar de qual letra?</label>
+                        <select id="chars-select" name="chars-select" aria-labelledby="label-chars-select">
+                            <option value="*">*</option>
+                            <option value="b">b</option>
+                            <option value="c">c</option>
+                            <option value="d">d</option>
+                            <option value="e">e</option>
+                            <option value="f">f</option>
+                            <option value="g">g</option>
+                            <option value="h">h</option>
+                            <option value="i">i</option>
+                            <option value="j">j</option>
+                            <option value="k">k</option>
+                            <option value="l">l</option>
+                            <option value="m">m</option>
+                            <option value="n">n</option>
+                            <option value="o">o</option>
+                            <option value="p">p</option>
+                            <option value="q">q</option>
+                            <option value="r">r</option>
+                            <option value="s">s</option>
+                            <option value="t">t</option>
+                            <option value="u">u</option>
+                            <option value="v">v</option>
+                            <option value="w">w</option>
+                            <option value="x">x</option>
+                            <option value="y">y</option>
+                            <option value="z">z</option>
+                        </select>
+                    </div>
+
+                    <div class="type">
+                        <label class="switch">
+                            <input type="checkbox" class="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                        <p>Criptografar</p>
+                    </div>
+                </fieldset> 
+                <input type="submit" id="input-submit" value="Criptografar" />
+            </form>
+        </div>
+    </main>
+
+    <div id="crypt-message" style="display: none;">
+        <div>
+            <h3 id="crypt-message-title"></h3>
+            <p id="crypt-message-body">
+            </p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.9/brython.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.9/brython_stdlib.min.js"></script>
+    <script src="index.py" type="text/python"></script>
+</body>
+</html>
