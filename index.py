@@ -1,13 +1,16 @@
 from browser import document, alert, bind, console
+from datetime import date
 import random
 
 @bind(document.select('.checkbox'), 'change')
 def handlerCheckbox(event):
     if event.target.checked:
         document.select('.type p')[0].innerHTML = 'Descriptografar'
+        document['input-submit'].value = 'Descriptografar'
         document.select('.type p')[0].style.backgroundColor = '#AB3A40'
     else:
         document.select('.type p')[0].innerHTML = 'Criptografar'
+        document['input-submit'].value = 'Criptografar'
         document.select('.type p')[0].style.backgroundColor = '#222'
 
 # SUBMIT DO FORMULARIO
@@ -114,3 +117,6 @@ def handlerSubmit(event):
     document['input-crypt'].value = ''
     document['input-crypt'].focus()
     event.preventDefault()
+
+
+document['swag_creator'].innerHTML = 'Giovani Eduardo &copy; {}'.format(date.today().year)
