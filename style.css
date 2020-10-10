@@ -191,6 +191,23 @@ input:checked + .slider:before {
     transform: translateX(26px);
 }
 
+footer {
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+footer h1 {
+    font-size: 1.2rem;
+}
+
+footer a {
+    font-size: 1rem;
+}
+
 @media only screen and (max-width: 590px) {
     .header {
         width: 100%;
