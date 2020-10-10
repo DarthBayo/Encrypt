@@ -201,7 +201,7 @@ footer {
 }
 
 footer h1 {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 footer a {
@@ -222,6 +222,9 @@ footer a {
         width: 100%;
     }
     #crypt-message {
+        width: 100%;
+    }
+    footer {
         width: 100%;
     }
 }
