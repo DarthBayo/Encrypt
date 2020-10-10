@@ -119,4 +119,4 @@ def handlerSubmit(event):
     event.preventDefault()
 
 
-document['swag_creator'].innerHTML = 'Giovani Eduardo &copy; {}'.format(date.today().year)
+document['swag_creator'].innerHTML = 'GMUtils &copy; {}'.format(date.today().year)
