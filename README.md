@@ -13,8 +13,8 @@
 <h3>Using</h3>
 <h5>Encrypting</h5>
 <p>Enter the word you want to encrypt and select the letter that will be equivalent to 'A'. Or let the algorithm select one to you.</p>
-<img src="./images/Descriptografar.png" alt="Imagem Criptografar" align="center">
+<img src="./images/Encriptografando.PNG" alt="Imagem Criptografar" align="center">
 
 <h5>Decrypting</h5>
 <p>To decrypt, do the same. Enter with encrypted word and select the letter... or let the algorithm show you all the possibilites</p>
-<img src="./images/Descriptografar.png" alt="Imagem Criptografar" align="center">
+<img src="./images/Descriptografando.PNG" alt="Imagem Criptografar" align="center">
